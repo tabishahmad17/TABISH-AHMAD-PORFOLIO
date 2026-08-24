@@ -31,7 +31,7 @@ This portfolio is a lightweight, high-performance static website built with:
 ## 👨‍💻 About Me
 I am a Computer Science graduate with a strong foundation in **Data Structures & Algorithms (DSA)**, **Object-Oriented Programming (OOPs)**, and **Data Analytics**. I specialize in building end-to-end data ingestion pipelines, analyzing complex datasets using SQL/Pandas, and building interactive dashboards.
 
-Feel free to connect with me on [LinkedIn](https://linkedin.com/in/tabish-ahmad) or check out my other repositories!
+Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/tabishmads/) or check out my other repositories!
 
 ---
 *Designed & Built by Tabish Ahmad*
