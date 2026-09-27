@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabish Ahmad - Data Analyst</title>
+    <title>Tabish Ahmad - Data Analyst & Python Developer</title>
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Fixed Video Background -->
@@ -14,90 +16,221 @@
         <canvas id="animation-canvas"></canvas>
         <div class="hero-gradient"></div>
     </div>
+
+    <!-- Vertical Social Dock (Left Rail matching reference) -->
+    <div class="social-dock-left">
+        <a href="https://github.com/tabishahmad17" target="_blank" title="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/tabishmads/" target="_blank" title="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+        <a href="mailto:tabishansari1975@gmail.com" title="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </a>
+        <div class="social-dock-line"></div>
+    </div>
+
+    <!-- Japanese Cyber Deco in Margin -->
+    <div class="cyber-side-text">未来を創る</div>
     
     <div class="content-overlay">
-        <!-- Hero Section -->
-        <section id="hero" class="hero">
+        <!-- Floating Slim Dark Navigation Bar -->
+        <div class="navbar-wrapper">
             <header class="navbar">
-                <div class="logo">Tabish Ahmad</div>
+                <a href="#hero" class="logo">
+                    <span class="logo-main">Tabish Ahmad</span>
+                    <span class="logo-sub">DATA ANALYST &bull; PYTHON</span>
+                </a>
                 <nav>
                     <a href="#about">About</a>
                     <a href="#experience">Experience</a>
-                    <a href="#skills">Skills</a>
+                    <a href="#skills">Services</a>
+                    <a href="#tech-stack">Tech Stack</a>
                     <a href="#projects">Projects</a>
                     <a href="#education">Education</a>
                     <a href="#contact">Contact</a>
                 </nav>
-                <a href="https://www.linkedin.com/in/tabishmads/" target="_blank" style="text-decoration: none;"><button class="btn-primary">LinkedIn ↗</button></a>
+                <a href="https://www.linkedin.com/in/tabishmads/" target="_blank" class="nav-cta-btn">Let's Connect ↗</a>
             </header>
+        </div>
 
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
             <div class="hero-content-wrapper">
                 <div class="hero-left">
-                    <span class="badge-small">B.E. COMPUTER SCIENCE 2026 • EX-AI INTERN @ WEBRUMI</span>
-                    <h1>Data<br>Analyst &<br><span class="accent-text">Python Dev</span></h1>
+                    <div class="target-badge">
+                        <span class="reticle-icon">⌖</span>
+                        <span>B.E. COMPUTER SCIENCE 2026 • EX-AI INTERN @ WEBRUMI</span>
+                    </div>
+                    <h1>DATA.<br><span class="gradient-pink">ANALYST.</span><br><span class="gradient-cyan">PYTHON DEV.</span></h1>
+                    <p class="hero-subtext">Transforming raw data into actionable insights through advanced SQL, Python pipelines, and AI/ML model development. Ex-AI Developer Intern at WebRumi.</p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn-cyber-primary">Explore My Work ↗</a>
+                        <a href="resumes/Tabish_Ahmad_Data_Analyst.pdf" target="_blank" class="btn-cyber-glass">Data Analyst Resume 📄</a>
+                    </div>
                 </div>
                 
                 <div class="hero-right">
-                    <div class="review-card">
-                        <div class="stars">SQL • Python • AI / ML</div>
-                        <p>Specialized in Data Analytics & AI</p>
-                        <p class="desc">Transforming raw data into actionable insights through advanced SQL, Python pipelines, and AI/ML model development. Ex-AI Developer Intern at WebRumi.</p>
-                        <a href="#experience" class="btn-start" style="margin-top: 15px;">View Experience ↗</a>
+                    <div class="portal-halo-wrapper">
+                        <div class="portal-ring"></div>
+                        <div class="hud-terminal-card">
+                            <div class="hud-card-header">
+                                <div class="terminal-dots">
+                                    <span class="dot-red"></span>
+                                    <span class="dot-yellow"></span>
+                                    <span class="dot-green"></span>
+                                </div>
+                                <span class="hud-badge"><span class="hud-pulse-dot"></span> AVAILABLE FOR OPPORTUNITIES</span>
+                            </div>
+                            <div class="hud-code-block">
+                                <p>&gt; TABISH AHMAD</p>
+                                <p>&gt; DATA ANALYST</p>
+                                <p>&gt; PYTHON DEVELOPER</p>
+                                <p>&gt; AI / ML RESEARCHER</p>
+                                <p>&gt; EX-AI INTERN @ WEBRUMI</p>
+                                <p>&gt; ALWAYS BUILDING<span class="terminal-cursor">_</span></p>
+                            </div>
+                            <p class="hud-desc">Specialized in Data Analytics, relational SQL queries, interactive dashboards, and Python AI ingestion pipelines.</p>
+                            <a href="#experience" class="btn-cyber-outline">View Experience ↗</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="hero-stats">
-                <div class="stat">
+            <!-- Hero Stats Bar (Below Hero, matching reference) -->
+            <div class="hero-stats-bar">
+                <div class="stat-box">
                     <h2>📊 Data Analysis</h2>
                     <p>SQL, Pandas, NumPy</p>
                 </div>
-                <div class="stat">
+                <div class="stat-box">
                     <h2>📈 Data Viz</h2>
                     <p>Chart.js, Dashboards</p>
                 </div>
-                <div class="stat">
+                <div class="stat-box">
                     <h2>💻 Python Core</h2>
                     <p>DSA, OOPs, FastAPI</p>
                 </div>
-                <div class="stat">
+                <div class="stat-box">
                     <h2>🤖 AI & ML</h2>
                     <p>WebRumi Intern, NLP</p>
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
+        <!-- About Section (Cyberpunk Split Layout) -->
         <section id="about" class="about-section">
-            <div class="about-left">
-                <p class="section-label">ABOUT ME</p>
-                <h2>Turning Data<br>into Actionable<br>Insights</h2>
-            </div>
-            <div class="about-right">
-                <p class="bold-text">Computer Science graduate with a strong foundation in Data Structures & Algorithms (DSA), Object-Oriented Programming (OOPs), and Data Analytics.</p>
-                <p class="muted-text">Hands-on experience analyzing complex datasets, building interactive dashboards, and designing Power BI-style reporting. Previously served as an <strong>AI Developer Intern at WebRumi</strong>, contributing to end-to-end AI/ML model development and intelligent data pipelines. Skilled in Python (Pandas, NumPy), advanced SQL (Joins, Aggregations), and building robust backend APIs.</p>
-                <div style="display: flex; gap: 15px; margin-top: 30px; flex-wrap: wrap;">
-                    <a href="#contact"><button class="btn-primary">Get in Touch ↗</button></a>
-                    <a href="resumes/Tabish_Ahmad_Data_Analyst.pdf" target="_blank"><button class="btn-outline-dark">Data Analyst Resume 📄</button></a>
-                    <a href="resumes/Tabish_Ahmad_Python_Dev.pdf" target="_blank"><button class="btn-outline-dark">Python Dev Resume 📄</button></a>
-                    <a href="resumes/WebRumi_AI_Developer_Internship_Certificate.pdf" target="_blank"><button class="btn-outline-dark">Internship Certificate 📜</button></a>
+            <div class="about-grid reveal-on-scroll">
+                <!-- Left Side: About Me Content -->
+                <div class="about-text-col">
+                    <span class="section-label-cyber">GET TO KNOW ME</span>
+                    <h2 class="about-title">About <span class="gradient-pink">Me</span></h2>
+                    
+                    <p class="about-desc">
+                        I’m Tabish Ahmad, a BTech Computer Science graduate and aspiring Python Developer passionate about AI and Machine Learning. I enjoy solving problems with Python, DSA, SQL, and AI technologies while continuously learning and building practical projects.
+                    </p>
+                    
+                    <p class="about-quote">
+                        "My goal is simple: keep learning, keep building, and turn ideas into useful technology."
+                    </p>
+                    
+                    <!-- Small highlight row below the paragraph -->
+                    <div class="about-highlights-row">
+                        <div class="highlight-pill">
+                            <span class="highlight-bullet">•</span>
+                            <span>Python Developer</span>
+                        </div>
+                        <div class="highlight-pill">
+                            <span class="highlight-bullet">•</span>
+                            <span>AI/ML Enthusiast</span>
+                        </div>
+                        <div class="highlight-pill">
+                            <span class="highlight-bullet">•</span>
+                            <span>Problem Solver</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Subtle "Currently Building & Learning" area -->
+                    <div class="currently-learning-box">
+                        <span class="learning-title">CURRENTLY BUILDING & LEARNING</span>
+                        <div class="learning-items">
+                            <span class="item-chip">Python</span>
+                            <span class="item-divider">•</span>
+                            <span class="item-chip">DSA</span>
+                            <span class="item-divider">•</span>
+                            <span class="item-chip">AI/ML</span>
+                            <span class="item-divider">•</span>
+                            <span class="item-chip">SQL</span>
+                            <span class="item-divider">•</span>
+                            <span class="item-chip">Data Analysis</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Action & Resume Buttons -->
+                    <div class="about-btn-group">
+                        <a href="#contact" class="btn-cyber-primary">Get in Touch ↗</a>
+                        <a href="resumes/Tabish_Ahmad_Data_Analyst.pdf" target="_blank" class="btn-cyber-glass">Data Analyst Resume 📄</a>
+                        <a href="resumes/Tabish_Ahmad_Python_Dev.pdf" target="_blank" class="btn-cyber-glass">Python Dev Resume 📄</a>
+                        <a href="resumes/WebRumi_AI_Developer_Internship_Certificate.pdf" target="_blank" class="btn-cyber-glass">Internship Certificate 📜</a>
+                    </div>
+                </div>
+
+                <!-- Right Side: Cyber Workstation HUD Card (Matching Kai Sterling About Card) -->
+                <div class="about-image-wrapper">
+                    <div class="about-image-card">
+                        <div class="about-hud-header">
+                            <div class="signature-glow">Tabish Ahmad</div>
+                            <span class="hud-badge"><span class="hud-pulse-dot"></span> DEV // HUD</span>
+                        </div>
+                        
+                        <div class="about-meta-grid">
+                            <div class="about-meta-row">
+                                <span class="meta-label">LOCATION</span>
+                                <span class="meta-sep">//</span>
+                                <span class="meta-val">Varanasi, India</span>
+                            </div>
+                            <div class="about-meta-row">
+                                <span class="meta-label">EXPERIENCE</span>
+                                <span class="meta-sep">//</span>
+                                <span class="meta-val">Ex-AI Intern @ WebRumi</span>
+                            </div>
+                            <div class="about-meta-row">
+                                <span class="meta-label">FOCUS</span>
+                                <span class="meta-sep">//</span>
+                                <span class="meta-val">Data Analysis, Python, AI/ML</span>
+                            </div>
+                            <div class="about-meta-row">
+                                <span class="meta-label">EMAIL</span>
+                                <span class="meta-sep">//</span>
+                                <span class="meta-val">tabishansari1975@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="about-image-inner">
+                            <img src="images/about_tabish.jpg" alt="Tabish Ahmad - Python & AI Developer" class="about-featured-img">
+                        </div>
+                        
+                        <div class="about-image-footer">
+                            <div class="about-image-badge">
+                                <span class="hud-pulse-dot"></span>
+                                <span>Available for Opportunities</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Experience Section -->
         <section id="experience" class="experience-section">
-            <div class="services-header">
-                <div>
-                    <p class="section-label-light">WORK EXPERIENCE</p>
-                    <h2>Internship &<br>Industry Roles</h2>
-                </div>
-                <div class="services-desc">
-                    <p>Demonstrated industry experience building machine learning models, automating data workflows, and developing intelligent software features.</p>
-                </div>
+            <div class="experience-header">
+                <span class="section-label-cyber">WORK EXPERIENCE</span>
+                <h2 class="section-heading">Internship &<br><span class="gradient-pink">Industry Roles</span></h2>
+                <p class="section-desc-muted">Demonstrated industry experience building machine learning models, automating data workflows, and developing intelligent software features.</p>
             </div>
 
-            <div class="experience-card">
+            <div class="experience-card reveal-on-scroll">
                 <div class="exp-info">
                     <div class="exp-badge-row">
                         <span class="exp-badge">3-MONTH INTERNSHIP</span>
@@ -124,8 +257,8 @@
                         <span class="tag-outline">Data Pipelines</span>
                     </div>
                     <div class="exp-actions">
-                        <a href="resumes/WebRumi_AI_Developer_Internship_Certificate.pdf" target="_blank" class="btn-primary" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">View Certificate 📜 ↗</a>
-                        <a href="resumes/WebRumi_AI_Developer_Internship_Certificate.pdf" download="WebRumi_AI_Developer_Internship_Certificate.pdf" class="btn-outline-dark" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">Download PDF ⤓</a>
+                        <a href="resumes/WebRumi_AI_Developer_Internship_Certificate.pdf" target="_blank" class="btn-cyber-primary">View Certificate 📜 ↗</a>
+                        <a href="resumes/WebRumi_AI_Developer_Internship_Certificate.pdf" download="WebRumi_AI_Developer_Internship_Certificate.pdf" class="btn-cyber-glass">Download PDF ⤓</a>
                     </div>
                 </div>
 
@@ -134,167 +267,312 @@
                         <img src="images/webrumi_certificate_preview.jpg" alt="WebRumi AI Developer Internship Certificate" class="cert-preview-img">
                         <div class="cert-preview-overlay">
                             <div>
-                                <p style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; opacity: 0.8; margin-bottom: 2px;">Official Credential</p>
-                                <span>WebRumi AI Developer Intern</span>
+                                <p style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.5px; opacity: 0.8; margin-bottom: 2px;">Official Credential</p>
+                                <span style="font-weight: 600; font-size: 0.85rem;">WebRumi AI Developer Intern</span>
                             </div>
-                            <span style="font-size: 1.2rem; color: var(--accent);">↗</span>
+                            <span style="font-size: 1.2rem; color: var(--neon-cyan);">↗</span>
                         </div>
                     </a>
-                    <p style="font-size: 0.8rem; color: rgba(255,255,255,0.6); margin-top: 10px;">Issued 01.09.2025 • Click preview to inspect official certificate</p>
+                    <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: 10px;">Issued 01.09.2025 • Click preview to inspect official certificate</p>
                 </div>
             </div>
         </section>
 
-        <!-- Skills Section -->
+        <!-- Services / Skills Section (Core Competencies) -->
         <section id="skills" class="services-section">
             <div class="services-header">
                 <div>
-                    <p class="section-label-light">TECHNICAL EXPERTISE</p>
-                    <h2>Core<br>Competencies</h2>
+                    <span class="section-label-cyber">SERVICES</span>
+                    <h2 class="section-heading">Core<br><span class="gradient-pink">Competencies</span></h2>
                 </div>
-                <div class="services-desc">
+                <div class="section-desc-muted">
                     <p>Proficient in modern data analysis libraries, relational database querying, and dashboard reporting architectures.</p>
                 </div>
             </div>
 
-            <div class="services-cards">
-                <div class="service-card active-card">
-                    <span class="card-tag">DATA ANALYSIS</span>
+            <div class="services-cards reveal-on-scroll">
+                <!-- Card 1 -->
+                <div class="service-card">
+                    <div class="service-card-top">
+                        <span class="card-tag">DATA ANALYSIS</span>
+                        <div class="card-icon-badge">📊</div>
+                    </div>
                     <h3>SQL & Data<br>Wrangling</h3>
-                    <div class="card-img" style="background-image: url('images/sql_data_1787344591912.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="card-img" style="background-image: url('images/sql_data_1787344591912.jpg');"></div>
                     <p>Advanced SQL, Joins, Aggregations, Data Cleaning, and Manipulation using Python Pandas and NumPy.</p>
+                    <div class="service-card-footer">
+                        <span class="card-arrow-btn">→</span>
+                    </div>
                 </div>
+
+                <!-- Card 2 -->
                 <div class="service-card">
-                    <span class="card-tag">DATA VIZ</span>
+                    <div class="service-card-top">
+                        <span class="card-tag">DATA VIZ</span>
+                        <div class="card-icon-badge">📈</div>
+                    </div>
                     <h3>Reporting &<br>Dashboards</h3>
-                    <div class="card-img" style="background-image: url('images/dashboards_1787344605902.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="card-img" style="background-image: url('images/dashboards_1787344605902.jpg');"></div>
                     <p>Power BI-style KPI modeling, filterable sales reporting, and interactive visualizations using Chart.js.</p>
+                    <div class="service-card-footer">
+                        <span class="card-arrow-btn">→</span>
+                    </div>
                 </div>
+
+                <!-- Card 3 -->
                 <div class="service-card">
-                    <span class="card-tag">PYTHON CORE</span>
+                    <div class="service-card-top">
+                        <span class="card-tag">PYTHON CORE</span>
+                        <div class="card-icon-badge">💻</div>
+                    </div>
                     <h3>Python<br>Programming</h3>
-                    <div class="card-img" style="background-image: url('images/python_core_1787344525851.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="card-img" style="background-image: url('images/python_core_1787344525851.jpg');"></div>
                     <p>Strong core knowledge of DSA and OOPs principles in Python. Building scalable backend APIs and data ingestion pipelines.</p>
+                    <div class="service-card-footer">
+                        <span class="card-arrow-btn">→</span>
+                    </div>
                 </div>
+
+                <!-- Card 4 -->
                 <div class="service-card">
-                    <span class="card-tag">MACHINE LEARNING</span>
+                    <div class="service-card-top">
+                        <span class="card-tag">MACHINE LEARNING</span>
+                        <div class="card-icon-badge">🤖</div>
+                    </div>
                     <h3>AI & Advanced<br>Analytics</h3>
-                    <div class="card-img" style="background-image: url('images/ai_analytics_1787344558251.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="card-img" style="background-image: url('images/ai_analytics_1787344558251.jpg');"></div>
                     <p>Sentiment Analysis, NLP, Scikit-Learn, and integrating AI models into data workflows.</p>
+                    <div class="service-card-footer">
+                        <span class="card-arrow-btn">→</span>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
+        <!-- Tech Stack Section (Kai Sterling Horizontal Grid) -->
+        <section id="tech-stack" class="tech-stack-section">
+            <div style="text-align: center; max-width: 700px; margin: 0 auto 30px;">
+                <span class="section-label-cyber">TECH STACK</span>
+                <h2 class="section-heading">Technologies I Work With</h2>
+                <p class="section-desc-muted" style="margin: 0 auto;">A modern toolkit of backend frameworks, analytics libraries, and database systems.</p>
+            </div>
+
+            <div class="tech-grid reveal-on-scroll">
+                <div class="tech-card">
+                    <span class="tech-icon">🐍</span>
+                    <span class="tech-name">Python</span>
+                </div>
+                <div class="tech-card">
+                    <span class="tech-icon">🗄️</span>
+                    <span class="tech-name">SQL</span>
+                </div>
+                <div class="tech-card">
+                    <span class="tech-icon">🐼</span>
+                    <span class="tech-name">Pandas</span>
+                </div>
+                <div class="tech-card">
+                    <span class="tech-icon">🔢</span>
+                    <span class="tech-name">NumPy</span>
+                </div>
+                <div class="tech-card">
+                    <span class="tech-icon">⚡</span>
+                    <span class="tech-name">FastAPI</span>
+                </div>
+                <div class="tech-card">
+                    <span class="tech-icon">🌐</span>
+                    <span class="tech-name">Django</span>
+                </div>
+                <div class="tech-card">
+                    <span class="tech-icon">📊</span>
+                    <span class="tech-name">Chart.js</span>
+                </div>
+                <div class="tech-card">
+                    <span class="tech-icon">🍃</span>
+                    <span class="tech-name">MongoDB</span>
+                </div>
+                <div class="tech-card">
+                    <span class="tech-icon">🤖</span>
+                    <span class="tech-name">Scikit-Learn</span>
+                </div>
+                <div class="tech-card">
+                    <span class="tech-icon">📈</span>
+                    <span class="tech-name">Power BI</span>
+                </div>
+                <div class="tech-card">
+                    <span class="tech-icon">🐙</span>
+                    <span class="tech-name">Git / GitHub</span>
+                </div>
+                <div class="tech-card">
+                    <span class="tech-icon">🧠</span>
+                    <span class="tech-name">NLP</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (Selected Work) -->
         <section id="projects" class="works-section">
             <div class="works-header">
                 <div>
-                    <p class="section-label">FEATURED PROJECTS</p>
-                    <h2>Recent<br>Data Projects</h2>
+                    <span class="section-label-cyber">FEATURED PROJECTS</span>
+                    <h2 class="section-heading">Selected <span class="gradient-pink">Work</span></h2>
+                    <p class="section-desc-muted">Explore a selection of data analysis dashboards and ingestion pipelines I've developed to solve practical problems.</p>
                 </div>
-                <div class="works-desc">
-                    <p>Explore a selection of data analysis dashboards and ingestion pipelines I've developed to solve practical problems.</p>
-                </div>
+                <a href="https://github.com/tabishahmad17" target="_blank" class="btn-cyber-outline">View All on GitHub ↗</a>
             </div>
 
-            <div class="works-table">
-                <div class="table-header">
-                    <div class="col-title" style="width: 50%;">Project Title & Description</div>
-                    <div class="col-category" style="width: 40%;">Tech Stack</div>
-                    <div class="col-action" style="width: 10%;"></div>
-                </div>
-                
-                <div class="table-row">
-                    <div class="col-title" style="width: 50%; padding-right: 20px;">
+            <div class="projects-grid reveal-on-scroll">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-banner" style="background-image: url('images/dashboards_1787344605902.jpg');">
+                        <span class="project-category-tag"># Sales Analytics</span>
+                    </div>
+                    <div class="project-content">
                         <h3>Pizza Sales Analytics System</h3>
-                        <p style="font-size: 0.85rem; color: #666; margin-top: 10px;">Analyzed a 10-table relational dataset using SQL joins. Built filterable sales reporting, KPIs, and Chart.js visualizations based on Power BI layouts.</p>
+                        <p>Analyzed a 10-table relational dataset using SQL joins. Built filterable sales reporting, KPIs, and Chart.js visualizations based on Power BI layouts.</p>
+                        <div class="project-card-footer">
+                            <div class="project-tags">
+                                <span class="project-tag">SQL</span>
+                                <span class="project-tag">Data Viz</span>
+                                <span class="project-tag">Chart.js</span>
+                                <span class="project-tag">Django</span>
+                            </div>
+                            <a href="https://github.com/tabishahmad17/Pizza-Sales-Analytics-System" target="_blank" class="round-btn" title="View Source on GitHub">↗</a>
+                        </div>
                     </div>
-                    <div class="col-category" style="width: 40%; display: flex; flex-wrap: wrap; gap: 8px;">
-                        <span class="tag-outline">SQL</span> <span class="tag-outline">Data Viz</span> <span class="tag-outline">Chart.js</span> <span class="tag-outline">Django</span>
-                    </div>
-                    <div class="col-action" style="width: 10%;"><a href="https://github.com/tabishahmad17/Pizza-Sales-Analytics-System" target="_blank" class="round-btn">↗</a></div>
                 </div>
 
-                <div class="table-row">
-                    <div class="col-title" style="width: 50%; padding-right: 20px;">
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-banner" style="background-image: url('images/ai_analytics_1787344558251.jpg');">
+                        <span class="project-category-tag"># Data Ingestion & NLP</span>
+                    </div>
+                    <div class="project-content">
                         <h3>AI-Daily Briefing Pipeline</h3>
-                        <p style="font-size: 0.85rem; color: #666; margin-top: 10px;">Built a data ingestion pipeline using Python to collect and structure news data. Applied sentiment analysis and NLP to categorize incoming data.</p>
+                        <p>Built a data ingestion pipeline using Python to collect and structure news data. Applied sentiment analysis and NLP to categorize incoming data.</p>
+                        <div class="project-card-footer">
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Data Ingestion</span>
+                                <span class="project-tag">NLP</span>
+                            </div>
+                            <a href="https://github.com/tabishahmad17/AI-Daily-Briefing" target="_blank" class="round-btn" title="View Source on GitHub">↗</a>
+                        </div>
                     </div>
-                    <div class="col-category" style="width: 40%; display: flex; flex-wrap: wrap; gap: 8px;">
-                        <span class="tag-outline">Python</span> <span class="tag-outline">Data Ingestion</span> <span class="tag-outline">NLP</span>
-                    </div>
-                    <div class="col-action" style="width: 10%;"><a href="https://github.com/tabishahmad17/AI-Daily-Briefing" target="_blank" class="round-btn">↗</a></div>
                 </div>
 
-                <div class="table-row">
-                    <div class="col-title" style="width: 50%; padding-right: 20px;">
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-banner" style="background-image: url('images/python_core_1787344525851.jpg');">
+                        <span class="project-category-tag"># Metric Evaluation</span>
+                    </div>
+                    <div class="project-content">
                         <h3>EVAL AI — Metric Evaluation</h3>
-                        <p style="font-size: 0.85rem; color: #666; margin-top: 10px;">Designed a weighted scoring framework across multiple metrics, applying evaluation and risk-analysis logic to score proficiency profiles.</p>
+                        <p>Designed a weighted scoring framework across multiple metrics, applying evaluation and risk-analysis logic to score proficiency profiles.</p>
+                        <div class="project-card-footer">
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Scoring Logic</span>
+                                <span class="project-tag">MongoDB</span>
+                            </div>
+                            <a href="#" class="round-btn" title="View Details">↗</a>
+                        </div>
                     </div>
-                    <div class="col-category" style="width: 40%; display: flex; flex-wrap: wrap; gap: 8px;">
-                        <span class="tag-outline">Python</span> <span class="tag-outline">Scoring Logic</span> <span class="tag-outline">MongoDB</span>
-                    </div>
-                    <div class="col-action" style="width: 10%;"><a href="#" class="round-btn">↗</a></div>
                 </div>
             </div>
         </section>
 
         <!-- Education & Certifications -->
-        <section id="education" class="services-section">
-            <div class="services-header">
-                <div>
-                    <p class="section-label-light">BACKGROUND</p>
-                    <h2>Education &<br>Certifications</h2>
-                </div>
+        <section id="education" class="education-section">
+            <div>
+                <span class="section-label-cyber">BACKGROUND & CREDENTIALS</span>
+                <h2 class="section-heading">Education & <span class="gradient-pink">Certifications</span></h2>
             </div>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; padding-bottom: 60px;">
-                <div style="border-left: 2px solid var(--accent); padding-left: 30px;">
-                    <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: white;">B.E. Computer Science & Engineering</h3>
-                    <p style="font-size: 1rem; line-height: 1.6; color: rgba(255,255,255,0.7); margin-bottom: 24px;">
+            
+            <div class="education-grid reveal-on-scroll">
+                <div class="education-card">
+                    <h3>B.E. Computer Science & Engineering</h3>
+                    <p>
                         Institute of Engineering and Technology, Dr Bhimrao Ambedkar University, Agra.
                     </p>
-                    <div>
-                        <h4 style="font-size: 1rem; margin-bottom: 4px; color: white;">08/2022 – 06/2026</h4>
-                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem;">Varanasi, Uttar Pradesh</p>
+                    <div class="education-meta">
+                        <h4>08/2022 – 06/2026</h4>
+                        <p>Varanasi, Uttar Pradesh</p>
                     </div>
                 </div>
-                <div style="border-left: 2px solid var(--accent); padding-left: 30px;">
-                    <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: white;">Certifications & Credentials</h3>
-                    <p style="font-size: 1rem; line-height: 1.7; color: rgba(255,255,255,0.7); margin-bottom: 24px;">
-                        • <strong>AI Developer Internship Certificate</strong> — WebRumi (3 Months) <a href="resumes/WebRumi_AI_Developer_Internship_Certificate.pdf" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: 600;">[View PDF ↗]</a><br>
+                
+                <div class="education-card">
+                    <h3>Certifications & Credentials</h3>
+                    <p>
+                        • <strong style="color: var(--neon-cyan);">AI Developer Internship Certificate</strong> — WebRumi (3 Months) <a href="resumes/WebRumi_AI_Developer_Internship_Certificate.pdf" target="_blank" style="color: var(--neon-pink); text-decoration: none; font-weight: 600;">[View PDF ↗]</a><br>
                         • NumPy, Pandas & Python for Data Analysis<br>
                         • Introduction to Data Science<br>
                         • Udemy Certified Python Developer<br>
                         • AI Foundations Associate (Oracle)
                     </p>
-                    <div>
-                        <h4 style="font-size: 1rem; margin-bottom: 4px; color: white;">Continuous Learning</h4>
-                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem;">Industry Experience & Online Platforms</p>
+                    <div class="education-meta">
+                        <h4>Continuous Learning</h4>
+                        <p>Industry Experience & Online Platforms</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="works-section">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; padding-bottom: 40px;">
-                <div>
-                    <p class="section-label">GET IN TOUCH</p>
-                    <h2 style="font-size: 3.5rem; margin-bottom: 15px; font-family: var(--font-serif); line-height: 1.1;">Let's Build Something<br>Amazing Together</h2>
-                    <p style="color: #666; margin-top: 30px; font-size: 1.1rem; line-height: 2;">
-                        <strong>Email:</strong> tabishansari1975@gmail.com<br>
-                        <strong>Phone:</strong> +91 7275768273<br>
-                        <strong>Location:</strong> Varanasi, Uttar Pradesh<br><br>
-                        <a href="https://www.linkedin.com/in/tabishmads/" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: 600;">Connect on LinkedIn ↗</a>
-                    </p>
-                </div>
-                <div>
-                    <form style="display: flex; flex-direction: column; gap: 20px;">
-                        <input type="text" placeholder="Your Name" style="width: 100%; padding: 16px; border: 1px solid #E5E0D8; background: white; border-radius: 4px; font-family: var(--font-main);">
-                        <input type="email" placeholder="Your Email" style="width: 100%; padding: 16px; border: 1px solid #E5E0D8; background: white; border-radius: 4px; font-family: var(--font-main);">
-                        <textarea placeholder="Your Message" rows="4" style="width: 100%; padding: 16px; border: 1px solid #E5E0D8; background: white; border-radius: 4px; font-family: var(--font-main);"></textarea>
-                        <button type="button" class="btn-primary" style="width: 100%; padding: 16px;">Send Message</button>
-                    </form>
+        <!-- Contact Section (Cyber Wireframe Globe Layout) -->
+        <section id="contact" class="contact-section">
+            <div class="contact-card-cyber reveal-on-scroll">
+                <div class="contact-globe-ambient"></div>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <span class="section-label-cyber">GET IN TOUCH</span>
+                        <h2>Let's build something<br><span class="gradient-pink">extraordinary.</span></h2>
+                        <p class="section-desc-muted">Feel free to reach out for data analysis opportunities, Python development roles, or collaborative projects.</p>
+                        
+                        <div class="contact-info-list">
+                            <div class="contact-info-item">
+                                <div class="contact-icon-box">✉️</div>
+                                <div class="contact-info-details">
+                                    <span>Email</span>
+                                    <a href="mailto:tabishansari1975@gmail.com">tabishansari1975@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-icon-box">📞</div>
+                                <div class="contact-info-details">
+                                    <span>Phone</span>
+                                    <p>+91 7275768273</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-icon-box">📍</div>
+                                <div class="contact-info-details">
+                                    <span>Location</span>
+                                    <p>Varanasi, Uttar Pradesh, India</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-icon-box">🔗</div>
+                                <div class="contact-info-details">
+                                    <span>Professional Profile</span>
+                                    <a href="https://www.linkedin.com/in/tabishmads/" target="_blank">Connect on LinkedIn ↗</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-card">
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Tell me about your project or opportunity" rows="5" required></textarea>
+                            </div>
+                            <button type="button" class="btn-submit">Send Message ✈</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -302,11 +580,15 @@
         <!-- Footer -->
         <footer class="footer-section">
             <div class="footer-content">
-                <div class="footer-logo">Tabish Ahmad.</div>
+                <div class="footer-logo">
+                    <span class="logo-main">Tabish Ahmad</span>
+                    <span class="logo-sub">DATA ANALYST &bull; PYTHON DEVELOPER</span>
+                </div>
                 <div class="footer-links">
                     <a href="#about">About</a>
                     <a href="#experience">Experience</a>
-                    <a href="#skills">Skills</a>
+                    <a href="#skills">Services</a>
+                    <a href="#tech-stack">Tech Stack</a>
                     <a href="#projects">Projects</a>
                     <a href="#education">Education</a>
                     <a href="#contact">Contact</a>
@@ -317,7 +599,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Tabish Ahmad. All rights reserved.</p>
+                <p>&copy; 2026 Tabish Ahmad. All rights reserved. &bull; <a href="#hero" style="color: var(--neon-pink); text-decoration: none;">Back to Top ↑</a></p>
             </div>
         </footer>
     </div>
