@@ -20,7 +20,8 @@ This portfolio is a lightweight, high-performance static website built with:
 
 ## 📁 Project Structure
 ```
-├── images/                  # Custom 3D AI-generated abstract images for skill cards
+├── images/                  # Custom 3D images and certificate previews
+├── resumes/                 # Data Analyst resume, Python Dev resume & WebRumi Internship Certificate
 ├── video_frames_30fps_small/# 240 sequential image frames used for the scroll animation
 ├── index.html               # Main website structure and content
 ├── style.css                # Styling, themes, and layout rules
@@ -29,7 +30,7 @@ This portfolio is a lightweight, high-performance static website built with:
 ```
 
 ## 👨‍💻 About Me
-I am a Computer Science graduate with a strong foundation in **Data Structures & Algorithms (DSA)**, **Object-Oriented Programming (OOPs)**, and **Data Analytics**. I specialize in building end-to-end data ingestion pipelines, analyzing complex datasets using SQL/Pandas, and building interactive dashboards.
+I am a Computer Science graduate with a strong foundation in **Data Structures & Algorithms (DSA)**, **Object-Oriented Programming (OOPs)**, and **Data Analytics**. I previously worked as an **AI Developer Intern at WebRumi** (June 2025 – August 2025), building working AI/ML models, data preprocessing pipelines, and evaluation routines. I specialize in building end-to-end data ingestion pipelines, analyzing complex datasets using SQL/Pandas, and building interactive dashboards.
 
 Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/tabishmads/) or check out my other repositories!
 
